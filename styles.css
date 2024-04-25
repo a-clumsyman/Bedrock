@@ -1,0 +1,173 @@
+/* Base Styling */
+body, h1, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', 'Helvetica Neue', Arial, sans-serif; /* Use a font that supports lighter weights */
+}
+
+/* Gradient Styling for Navbar and Founder Profile */
+.gradient {
+  background: linear-gradient(to bottom, #19442D, #3E845F); /* Consistent gradient across sections */
+  color: white; /* Ensure text is visible */
+  padding: 10px; /* Padding for consistency */
+}
+
+/* Navigation Bar */
+.navbar {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Evenly spaced elements */
+  align-items: center; /* Align vertically */
+  padding: 10px 20px; /* Padding for consistency */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* Thin white line after navbar */
+
+}
+
+.navbar-logo {
+  width: 40px; /* Adjust logo size */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.navbar ul {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Flexbox for spacing */
+  justify-content: center; /* Center links */
+  align-items: center; /* Align vertically */
+  gap: 15px; /* Space between links */
+}
+
+.navbar a {
+  color: white; /* White text for visibility */
+  text-decoration: none; /* No underlines */
+  padding: 10px 15px; /* Padding for links */
+}
+
+.navbar a:hover {
+  background-color: rgba(30, 100, 60, 0.5); /* Lighter hover effect */
+}
+
+
+
+
+/* Founder Profile Section */
+.founder-profile {
+  display: flex; /* Flexbox for alignment */
+  justify-content: space-between; /* Proper spacing between content and image */
+  align-items: center; /* Align vertically */
+  min-height: 400px; /* Minimum height to prevent collapsing */
+  height: 950px; /* Defined height for the parent container */
+  font-size: 16px; /* Default font size for the section */
+
+}
+
+.founder-content {
+  position: relative; /* Ensure it stays above the overlay */
+  padding: 20px; /* Consistent padding */
+  max-width: 40%; /* Limit the width to ensure proper alignment */
+  text-align: left; /* Center the text */
+  font-weight: 350; /*  weight for subheading */
+}
+
+.founder-block {
+  padding-bottom: 20px;
+
+}
+
+/* Absolute Positioning for Background Overlay */
+.background-overlay {
+  position: absolute; /* Positioning for overlay */
+    padding-top: -60%; /* Consistent padding */
+
+  bottom: 100; /* Align to the bottom of the parent */
+  left: 0; /* Align to the left */
+  width: 131%; /* Adjust size for the overlay */
+  height: 100%; /* Adjust size for the overlay */
+  background-image: url('src/dots_bg.png'); /* Path to background image */
+  background-repeat: no-repeat; /* Prevent repetition */
+  background-size: contain; /* Ensure image fits */
+  opacity: 0.5; /* Optional: Control transparency */
+  z-index: 1; /* Keeps it behind other content but visible */
+
+}
+
+.founder-image {
+  flex: 0 0 850px; /* Fixed width for the image */
+  padding-right: 0; /* No padding on the right to stick to the wall */
+}
+
+.profile-image {
+  width: 100%; /* Ensure image takes up the entire container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.white-card {
+  background: white; /* White background for the card */
+  padding: 20px; /* Padding for consistency */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  color: black; /* Set text color to black */
+  font-size: 1em; /* Increase font size for the subheading */
+  font-weight: 400;
+  line-height: 1.5; /* Increase line spacing for readability */
+}
+
+/* Increase Font Size for Headings */
+.founder-content h1 {
+  font-size: 4em; /* Increase font size for the main heading */
+  font-weight: bold; /* Make the heading bold */
+}
+
+.founder-content h2 {
+  font-size: 1.5em; /* Increase font size for the subheading */
+  font-weight: regular; /* Semi-bold weight for subheading */
+}
+
+
+
+
+/* Increase Font Size for Paragraphs */
+.founder-content p {
+  font-size: 1.8em; /* Increase font size for paragraphs */
+  line-height: 1.5; /* Increase line spacing for readability */
+}
+
+/* Work Experience Section */
+.work-experience {
+  padding: 20px; /* Padding for consistency */
+}
+
+.experience-card {
+  background: #4CAF50; /* Green background for cards */
+  padding: 20px; /* Padding around each card */
+  margin-bottom: 20px; /* Spacing between cards */
+  border-radius: 10px; /* Rounded corners */
+}
+
+.experience-card ul {
+  list-style: disc inside; /* Use bullet points */
+}
+
+/* LinkedIn Button Styling */
+.linkedin-button {
+  display: inline-block; /* Allow hover effects */
+  background: #0077B5; /* LinkedIn blue */
+  color: white; /* White text for visibility */
+  padding: 10px 20px; /* Padding for the button */
+  text-decoration: none; /* No underlines */
+  text-align: center; /* Center text */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.linkedin-button:hover {
+  background: #005582; /* Darker blue on hover */
+}
+
+/* Footer Styling */
+footer {
+  background: linear-gradient(to bottom, #19442D, #3E845F); /* Consistent gradient */
+  text-align: center; /* Center text */
+  padding: 20px; /* Consistent padding */
+  color: white; /* White text for visibility */
+}
